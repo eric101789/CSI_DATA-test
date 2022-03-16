@@ -23,4 +23,3 @@ print(data)
 # 選取特定資料片段(第十列CSI_DATA)
 # data_column_10 = csi_data['CSI_DATA'][10:11]
 # print(data_column_10)
-

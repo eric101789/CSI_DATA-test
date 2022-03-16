@@ -1,8 +1,12 @@
 import csv
 import pandas as pd
 import numpy as np
+from pathlib import Path
 
-with open('my-experiment-file.csv', newline='') as csvfile:
+parent_path = Path(__file__).parents[1]
+res_path = parent_path / 'res'
+csv_path = res_path / 'my-experiment-file.csv'
+with open(csv_path, newline='') as csvfile:
     # 讀取 CSV 檔案內容
     reader = csv.reader(csvfile)
     data_list = list(reader)
